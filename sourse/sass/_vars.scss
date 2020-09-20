@@ -70,7 +70,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-800 !default;
+$dark: rgba($color: #222222, $alpha: .7) !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: ("primary": $primary,

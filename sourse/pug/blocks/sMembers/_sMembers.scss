@@ -22,7 +22,7 @@
 	&__img-wrap{
 		@include block(259, 304);
 		margin-bottom: rem(20);
-		border-radius: 15px;
+		border-radius: rem(150px);
 		overflow: hidden; 
 		img{
 			object-position: top;
@@ -93,9 +93,8 @@
 		text-transform: uppercase;
 
 	}
-	&__title{
-		font-weight: 900;
-		text-transform: uppercase;
+	&__title{ 
+		font-weight: bold;
 		max-width: 200px;
 		line-height: (20 / 16);
 		margin-bottom: rem(12);

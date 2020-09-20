@@ -2,12 +2,12 @@ mixin sQuestions()
 	// start sQuestions
 	+b.SECTION.sQuestions.section#sQuestions&attributes(attributes)
 		.container
-			+b.section-title.text-primary
+			+b.section-title
 				.row
 					.col
 						h3 Вопросы спикерам
 					.col-auto
-						a.btn.btn-danger.link-modal(href="#modal-ask-question") Задать Вопросы
+						a.btn.btn-primary.link-modal(href="#modal-ask-question") Задать Вопросы
 			+e.wrap
 				.live-track-info-questions-box.ps.ps--active-y
 					section.live-track-info-questions-item
