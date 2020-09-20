@@ -1,7 +1,50 @@
+.cabinet-page .footer{
+	background: url(../img/svg/footer-bg.svg);
+	background-position: top center;
+	padding-top: rem(100);
+}
 .footer {
-		
+		background: linear-gradient(180deg, rgba(245, 222, 210, 0) 0%, #F5DED2 75.52%);
+		&__block{
+			max-width: rem(360);
+			margin-left: auto;
+			position: relative;
+			@include media-breakpoint-up(sm) {
 
+				padding: rem(124) 0 rem(34);
+			}
+			padding: rem(44) 0 rem(34);
+			position: relative;
+			z-index: 2;
+			img{
+				position: absolute;
+				@include media-breakpoint-up(xl) {
 
+					right: calc(100% + 136px);
+				}
+				right: calc(100% + 30px);
+				bottom: -2px;
+			}
+		 }
+		 &__copy{
+			 font-size: rem(13);
+			 margin-bottom: rem(20);
+		 }
+		 &__mail{
+			 font-size: rem(13);
+		 }
+		 &__tel{
+			 @include rfs(20px);
+			 font-weight: normal;
+			 @extend .text-body;
+			 display: inline-block;
+			 margin-bottom: rem(50);
+		 }
+		 &__text{
+			 font-size: 10px;
+			 color: #222222;
+			 opacity: 0.5;
+		 }
 // 
 @include media-breakpoint-up(xl) {}
 
@@ -9,7 +52,9 @@
 
 @include media-breakpoint-up(md) {}
 
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+ 
+}
 
 @include media-breakpoint-up(xs) {}
 
@@ -40,4 +85,10 @@
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {}
+
+
+}
+
+.smallest{
+	font-size: 12px;
 }

@@ -1,7 +1,7 @@
 const JSCCommon = {
 	// часть вызов скриптов здесь, для использования при AJAX
 	btnToggleMenuMobile: [].slice.call(document.querySelectorAll(".toggle-menu-mobile--js")),
-	menuMobile: document.querySelector(".menu-mobile--js"),
+	menuMobile: document.querySelector(".nav-wrap"),
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
 
 	modalCall() {
@@ -63,8 +63,7 @@ const JSCCommon = {
 				element.addEventListener('click', () => {
 					this.btnToggleMenuMobile.forEach(element => element.classList.toggle("on"));
 					this.menuMobile.classList.toggle("active");
-					document.body.classList.toggle("fixed");
-					document.querySelector('html').classList.toggle("fixed");
+					// document.body.classList.toggle("fixed");
 					return false;
 				});
 			});
@@ -77,20 +76,19 @@ const JSCCommon = {
 				element.classList.remove("on");
 			});
 			this.menuMobile.classList.remove("active");
-			document.body.classList.remove("fixed");
-			document.querySelector('html').classList.remove("fixed");
+			// document.body.classList.remove("fixed");
 		}
 
 	},
 	mobileMenu() {
 		if (this.menuMobileLink) {
 			this.toggleMenu();
-			document.addEventListener('mouseup', (event) => {
-				let container = event.target.closest(".menu-mobile--js.active"); // (1)
-				if (!container) {
-					this.closeMenu();
-				}
-			}, { passive: true });
+			// document.addEventListener('mouseup', (event) => {
+			// 	let container = event.target.closest(".menu-mobile--js.active"); // (1)
+			// 	if (!container) {
+			// 		this.closeMenu();
+			// 	}
+			// }, { passive: true });
 
 			window.addEventListener('resize', () => {
 				if (window.matchMedia("(min-width: 992px)").matches) {
@@ -192,30 +190,7 @@ const JSCCommon = {
 
 		});
 	},
-	heightwindow() {
-		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-		let vh = window.innerHeight * 0.01;
-		// Then we set the value in the --vh custom property to the root of the document
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-		// We listen to the resize event
-		window.addEventListener('resize', () => {
-			// We execute the same script as before
-			let vh = window.innerHeight * 0.01;
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
-		}, { passive: true });
-	},
-	animateScroll() {
-		// листалка по стр
-		$(" .top-nav li a, .scroll-link").click(function () {
-			const elementClick = $(this).attr("href");
-			const destination = $(elementClick).offset().top;
-
-			$('html, body').animate({ scrollTop: destination }, 1100);
-
-			return false;
-		});
-	},
+ 
 	getCurrentYear(el) {
 		let now = new Date();
 		let currentYear = document.querySelector(el);
@@ -229,16 +204,13 @@ function eventHandler() {
 	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
-	JSCCommon.ifie();
-	JSCCommon.sendForm();
-	JSCCommon.heightwindow();
-	JSCCommon.animateScroll();
+	JSCCommon.ifie();  
 
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = 'main.jpg';
+	screenName = '05.jpg';
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
@@ -246,7 +218,15 @@ function eventHandler() {
 
 
 	function whenResize() {
- 
+		const topH = $(".top-nav").height();
+		$(window).scroll(  function () {
+
+			if ($(window).scrollTop() > topH) {
+				$('.top-nav  ').addClass('fixed');
+			} else {
+				$('.top-nav  ').removeClass('fixed');
+			}
+		})
 
 	}
 

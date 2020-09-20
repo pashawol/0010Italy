@@ -1,0 +1,26 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+
+include ../blocks/sLogos/_sLogos.pug
+include ../blocks/sAreas/_sAreas.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Направления образования'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+top-nav('l')
+	+page-title(title) 
+	+sAreas
+	//- +sContact()
+
+	+sLogos
+	+footer()
+
+
+	

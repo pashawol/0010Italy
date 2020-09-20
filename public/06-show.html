@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Выставка</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"><meta name="format-detection" content="telephone=no">
+		<link rel="image_src" href="http://genrif.ru/assets/i/soc-logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="content">
+		<meta property="og:title" content="content">
+		<meta property="og:description" content="content">
+		<meta property="og:url" content="content">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="path/to/image.jpg">
+		<meta property="og:image:width" content="968">
+		<meta property="og:image:height" content="504">
+		<!-- Custom Browsers Color-->
+		<meta name="theme-color" content="#3361d8">
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+		<!-- start top-nav-->
+		<div class="top-nav block-with-lazy">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-auto col"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
+					</div>
+					<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">Ru</a>
+					</div>
+					<div class="col-auto order-lg-last d-none d-md-block"><a class="top-nav__btn" href="#"><span>Регистрация</span></a>
+					</div>
+					<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">
+						<svg class="icon icon-user ">
+							<use xlink:href="img/svg/sprite.svg#user"></use>
+						</svg></a>
+					</div>
+					<div class="col-auto d-lg-none">
+						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+						</div>
+					</div>
+					<div class="top-nav__col col-lg">
+						<div class="nav-wrap">
+							<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Выставка</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Live</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Направления</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+								</li>
+							</ul><a class="top-nav__btn d-sm-none" href="#"><span>Регистрация</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end top-nav-->
+		<div class="container">
+			<div class="page-title">
+				<div class="row">
+					<div class="col-auto"><a class="page-title__link" href="#">
+						<svg class="icon icon-arrow-back ">
+							<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
+						</svg></a>
+					</div>
+					<div class="col">
+						<h1>Выставка</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- start sExhibition-->
+		<div class="sExhibition" id="sExhibition">
+			<div class="container">
+				<div class="sExhibition__filter">
+					<div class="row">
+						<div class="sExhibition__col col-xl-auto mb-0">
+							<div class="search-block">
+								<div class="search-block__input-wrap form-group"><input class="search-block__input form-control" type="text" placeholder="Поиск по учебным заведениям" name="text"/>
+								</div>
+								<!-- +e.input-wrap-->
+								<button class="search-block__btn" type="submit">
+									<svg class="icon icon-search ">
+										<use xlink:href="img/svg/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="sExhibition__col-toggle col-md d-lg-block">
+							<div class="sExhibition__input-wrap form-group">
+								<label><span class="input-title">Город</span>
+									<select class="sExhibition__input form-control" name="select">
+										<option value="Не выбрано">Не выбрано</option>
+										<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
+										<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
+										<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
+										<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
+									</select>
+								</label>
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+						<div class="sExhibition__col-toggle col-md d-lg-block">
+							<div class="sExhibition__input-wrap form-group">
+								<label><span class="input-title">Направление образования</span>
+									<select class="sExhibition__input form-control" name="select">
+										<option value="Не выбрано">Не выбрано</option>
+										<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
+										<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
+										<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
+										<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
+									</select> 
+								</label> 
+							</div>
+							<!-- +e.input-wrap-->
+						</div>
+					</div>
+					<div class="sExhibition__toggle d-lg-none"><span class="show">Больше фильтров</span><span class="hide">Скрыть</span>
+					</div>
+				</div>
+				<div class="row">
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-1.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-1.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI MILANO
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-2.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-2.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ CATTOLICA DEL SACRO CUORE (UCSC)
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-3.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-3.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">POLITECNICO DI MILANO
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-4.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-4.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI PISA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-5.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-5.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ IUAV DI VENEZIA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-6.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-6.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">LUISS GUIDO CARLI (LUISS UNIVERSITY)
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-7.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-7.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ PER STRANIERI DI SIENA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-8.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-8.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ COMMERCIALE LUIGI BOCCONI (UNIVERSITÀ BOCCONI)
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-9.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-9.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ CA’ FOSCARI VENEZIA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-10.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-10.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ IULM – MILANO
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-11.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-11.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI MACERATA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-12.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-12.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ <br> DI SIENA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-13.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-13.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI PADOVA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-14.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-14.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">UNIVERSITÀ <br> LUMSA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/Exhibition-15.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-15.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sExhibition__text">ALMA LA SCUOLA INTERNAZIONALE DI CUCINA ITALIANA
+								</div></a>
+							</div>
+							<!-- /+e.col.col-md-4.col-6-->
+				</div>
+			</div>
+			<div class="pagination-wrapper">
+				<ul class="page-numbers">
+							<li><span class="prev page-numbers">
+									<svg class="icon icon-arrow-left ">
+										<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+									</svg></span>
+							</li>
+							<li><span class="page-numbers current"> 1</span>
+							</li>
+							<li><a class="page-numbers" href="#">1</a>
+							</li>
+							<li><a class="page-numbers" href="#">2</a>
+							</li>
+							<li><a class="page-numbers" href="#">...</a>
+							</li>
+							<li><a class="page-numbers" href="#">23</a>
+							</li>
+							<li><a class="next page-numbers" href="#">
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg></a>
+							</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end sExhibition-->
+		<!-- start sLogos-->
+		<section class="sLogos section" id="sLogos">
+			<div class="container"> 
+				<div class="section-title text-center">
+					<h2>Организаторы и&nbsp;партнеры выставки</h2>
+				</div>
+				<div class="row">
+							<div class="sLogos__col col-lg-auto col-6">
+								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-1.png" loading="lazy" alt=""/></noscript>
+							</div>
+							<div class="sLogos__col col-lg-auto col-6">
+								<noscript class="loading-lazy"><img class="lazy res-i" src="img/svg/logo.svg" loading="lazy" alt=""/></noscript>
+							</div>
+							<div class="sLogos__col col-lg-auto col-6">
+								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-3.png" loading="lazy" alt=""/></noscript>
+							</div>
+							<div class="sLogos__col col-lg-auto col-6">
+								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-4.png" loading="lazy" alt=""/></noscript>
+							</div>
+				</div>
+			</div>
+		</section>
+		<!-- end sLogos-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block"><img src="img/svg/footer-img.svg" loading="lazy" alt=""/>
+					<div class="footer__copy">© study-italy.ru 2015 —2020
+					</div><a class="footer__mail" href="mailto:info@studiesandcareers.com">info@studiesandcareers.com</a><br/><a class="footer__tel" href="tel:+74956408001">+7 495 640 80 01</a>
+					<div class="footer__text">Мы&nbsp;собираем метаданные пользователей (cookie, данные об&nbsp;IP-адресе и&nbsp;меcтоположении) для функционирования сайта. Если вы&nbsp;не&nbsp;хотите, чтобы эти данные обрабатывались, то&nbsp;вам следует покинуть сайт
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--  start modals-->
+		<div class="modal-win" id="modal-call" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="text-center">
+						<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+						</div>
+						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+					</div>
+					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+					</div>
+					<!-- +e.input-wrap-->
+					<button class="form-wrap__btn btn" type="submit"> 
+					</button>
+					<div class="form-wrap__polite">
+						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<!-- end modals-->
+		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<!-- modal libs-->
+		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<script src="libs/swiper/js/swiper.min.js"></script>
+		<!-- /slider libs-->
+		<script src="libs/inputmask/inputmask.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

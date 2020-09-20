@@ -1,10 +1,29 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
+			+e.block
+				h1 
+					span.text-danger УЧИСЬ <br>  В&nbsp;ИТАЛИИ!
+					span STUDIARE <br> IN&nbsp;ITALIA 8 
+						small ½
+				mixin item(i, p)
+					+e.item
+						+e.img-wrap
+							img(src=`img/svg/head-i-${i}.svg`, alt="")
+						+e.text!= p
+				+item("1",`Первая международная <br> онлайн-выставка итальянского <br> образования`)
+				+item("2",`Лучшие <br> итальянские учебные <br> заведения`)
+				+item("3",`5000+      <br>       успешных  <br> зачислений`)
+				+e.circle-wrap
+					+e.circle--sm
+						+e.text более
+						+e.number--lg.text-danger 80
+						+e.text учебных заведений <br> за&nbsp;всю историю <br> выставки
 
-			.row
-						
+					+e.circle--lg
+						+e.text более
+						+e.number.text-primary 20 <br> 000
+						+e.text.h6 студентов посетили  <br> выставку с&nbsp;2012
+				img.img(src="img/svg/head-img.svg" loading="lazy", alt="") 
 	// end headerBlock

@@ -1,0 +1,61 @@
+
+	// start .sTalkom
+	.sTalkom {
+		--sPT: #{rem(110)};
+		.section-title{
+			max-width: rem(520);
+			margin-bottom: rem(8);
+		}
+		.container{
+			position: relative;
+			// z-index: 2;
+			&::before{
+				content: url(../img/svg/right.svg);
+				@include media-breakpoint-up(md) {
+					
+					bottom: -40px;
+					left: 450px;
+				}
+				bottom: 40px;
+					left: 150px;
+				position: absolute;
+				z-index: -1;
+			}
+		}
+		 p{
+			 @extend .h5; 
+			 font-weight: normal;
+			 max-width: rem(400);
+			 margin-bottom: rem(35);
+		 }
+		 picture{
+			 @include media-breakpoint-up(lg) {
+
+				 width: rem(544);
+				}
+			 height: rem(507);
+			 clip-path: polygon(18% 0, 100% 0, 100% 57%, 60% 100%, 0 100%, 0 70%);
+			 position: relative;
+			 overflow: hidden;
+			 margin-bottom: rem(40);
+		 }
+		 .row{
+			 @include media-breakpoint-up(xl) {
+				 --bs-gutter-x:120px;
+			 }
+			 @include media-breakpoint-up(lg) {
+				 --bs-gutter-x:60px;
+				//  --bs-gutter-x:60px;
+			 }
+		 }
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sTalkom

@@ -1,0 +1,28 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sLogos/_sLogos.pug 
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Регистрация'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+top-nav()
+	+page-title(title)
+	+reg()
+					 
+	//- +headerBlock()
+	//- +sProgram
+	//- .bg-grad
+	//- 	+sPerson
+	//- 	+sNetworking 
+	+sLogos
+	+footer()
+
+
+	

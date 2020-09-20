@@ -1,1 +1,9 @@
-1. Отключил lazy плагин. Поставил  loading="lazy"
+1. <02-registration.html>
+1. <03-login.html>
+1. <04-cabinet.html>
+1. <04-cabinet-1.html>
+1. <04-cabinet-2.html>
+1. <04-cabinet-3.html>
+1. <04-cabinet-4.html>
+1. <05-areas.html>
+1. <06-show.html>

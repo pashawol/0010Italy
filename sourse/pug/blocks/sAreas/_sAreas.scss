@@ -1,0 +1,61 @@
+
+	// start .sAreas
+	.sAreas {
+		.row{ 
+			@include media-breakpoint-up(xl) { 
+				--bs-gutter-x: 40px;
+				--bottom: 53px;
+			}
+			--bottom: 30px;
+		}
+		&__item{
+			min-height: rem(260);
+			padding: rem(45) rem(20) rem(15);
+			text-align: center;
+			height: calc(100% - var(--bottom));
+			margin-bottom: var(--bottom);
+			background: linear-gradient(90.2deg, #FAFFFC 0.16%, #F0F8F4 5.35%, #E8F3ED 99.82%);
+			position: relative;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			color: $body-color;
+			@include rfs(24px);
+			line-height: (33 / 24);
+			font-weight: bold;
+			&::before{
+				opacity: 0;
+				content: '';
+				@include a-cent;
+				background-color: $danger;
+				@include mt;
+				z-index: -1;
+			}
+			&:hover{
+				&::before{
+					opacity: 1;
+				}
+				color: #ffffff;
+			}
+		}
+		&__img-wrap{
+			margin-bottom: rem(15);
+		}
+		&__title{
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sAreas

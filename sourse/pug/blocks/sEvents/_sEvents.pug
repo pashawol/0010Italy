@@ -1,0 +1,24 @@
+mixin sEvents()
+	// start sEvents
+	+b.sEvents.section#sEvents&attributes(attributes)
+		.container
+				
+				+e.btn.btn-primary(href="#") 
+					+icon('icon-print')
+				mixin item(d,t)
+					+e.item
+						.row
+							.col.small!= d
+							.col-auto.order-sm-last 
+								+e.star.active
+									+icon('star')
+							.col-sm-auto.small Раздел сессии
+						.h6.strong Studiare in Italia открывает ворота Италии
+						.text-secondary Studiare in Italy: your main door to Italian education
+
+				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+
+	// end sEvents

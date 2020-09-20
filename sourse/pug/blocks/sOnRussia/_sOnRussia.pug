@@ -1,0 +1,21 @@
+mixin sOnRussia()
+	// start sOnRussia
+	+b.SECTION.sOnRussia.section#sOnRussia&attributes(attributes)
+		.container
+			+b.section-title
+				h2  #ONRUSSIA
+
+				
+			.row
+				mixin item(i, p)
+					+e.col.col-lg-3.col-sm-6
+						+e.item
+							+e.img-wrap
+								+pic(`onr-${i}.png`,'',0)
+							p!= p
+					// /+e.col.col-3
+				+item(`1`,`Интерактивный командный <strong>квест- экскурсия по&nbsp;Казани</strong> с&nbsp;использованием мобильного приложения НЛСК`)
+				+item(`2`,`Кейс-задача по&nbsp;<strong>проектному управлению приложением НЛСК</strong>. Авторы лучшего решения кейсов получат возможность стажировки в&nbsp;проекте НЛСК`)
+				+item(`3`,`Ежедневные <strong>квизы</strong> в&nbsp;приложении`)
+				+item(`4`,`Розыгрыш 20 <strong>Apple Watch 3</strong>&nbsp;сезона &laquo;Лиги OnRussia&raquo;`)
+	// end sOnRussia

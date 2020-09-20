@@ -1,0 +1,19 @@
+mixin sProgram()
+	// start sProgram
+	+b.SECTION.sProgram.section#sProgram&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Что будет на&nbsp;слёте НЛСК
+				
+			.row
+				mixin item(t)
+					+e.col.col-md
+						+e.item
+							+e.title!= t
+					// +e.col.col
+				+item(`Обучающие модули «Корпорация НЛСК»`)
+				+item(`Факультативы по&nbsp;личной <br> эффективности <br> «Компетенции будущего»`)
+				+item(`Общение с&nbsp;Talkом. Программа&nbsp;2.0`)
+				+item(`Грантовый конкурс Росмолодежи`)
+				+item(`Площадка<br> #ONRUSSIA`)
+	// end sProgram

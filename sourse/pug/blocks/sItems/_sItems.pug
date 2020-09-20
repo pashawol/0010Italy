@@ -1,0 +1,16 @@
+mixin sItems()
+	// start sItems
+	+b.sItems.section#sItems&attributes(attributes)
+		.container
+			.row
+				mixin item(i,t,p)
+					+e.col.col-lg.col-sm-4.col-6
+						img(src=`img/svg/item-${i}.svg` loading="lazy", alt="")
+						+e.title=t
+						p!= p
+				+item(`1`,`Мое дело`,`Интерактивные блоки`)
+				+item(`2`,`Горизонты событий`,`Вип-встречи`)
+				+item(`3`,`На связи`,`Онлайн вовлечение своих сообществ`)
+				+item(`4`,`Внедрение`,`Работа в приложении НЛСК`)
+				+item(`5`,`Сеть НЛСК`,`Нетворкинг`)
+	// end sItems
