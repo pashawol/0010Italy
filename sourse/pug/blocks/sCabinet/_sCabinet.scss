@@ -99,6 +99,7 @@
 	 }
 	 .search-block { 
 		 margin-right: rem(15);
+		 margin-top: 0;
 	 }
 		 
 	@include media-breakpoint-up(xl) {}
@@ -189,17 +190,17 @@
 					&:hover{
 						overflow: inherit;
 					}
+					.public-chat{
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						max-width: none;
+						background-color: #ffffff;
+					}
 			}
 			border-right: 1px solid rgba($color: #8F9BB3, $alpha: .23);
 			position: relative;
-			.public-chat{
-				position: absolute;
-				left: 0;
-				top: 0;
-				height: 100%;
-				max-width: none;
-				background-color: #ffffff;
-			}
 		.public-chat{ 
 			width: rem(300);
 			text-align: left;

@@ -31,10 +31,15 @@ mixin page-title(t)
 						+icon("arrow-back")
 				.col
 					h1= t
+				block
 
 mixin reg(b="Зарегистрироваться")
 	+b.form-wrap(class="form-wrap--border")
 		.container
+			.h6.mb-4 Пожалуйста, заполните анкету латинскими буквами
+				br
+				| Please fill in the application form with Latin letters
+
 			.row
 				.col
 					form(action='/file-upload'  enctype="multipart/form-data")
@@ -48,6 +53,13 @@ mixin reg(b="Зарегистрироваться")
 								+input("",'tel','Телефон / Phone Number')
 							.col-lg-6
 								+input("",'email','Почта/E-mail')
+							.col-lg-6 
+									label
+										+b.SPAN.input-title Страна проживания / Country of residence
+										+e.SELECT.input.form-control
+											option Россия
+											option Казахстан
+											option Азербайджан
 							.col-lg-6
 								+e.input-wrap.form-group
 									label

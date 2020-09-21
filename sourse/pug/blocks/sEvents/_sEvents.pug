@@ -13,7 +13,7 @@ mixin sEvents()
 								+e.star.active
 									+icon('star')
 							.col-sm-auto.small Раздел сессии
-						.h6.strong Studiare in Italia открывает ворота Италии
+						.h6.strong: a.text-body(href="#") Studiare in Italia открывает ворота Италии
 						.text-secondary Studiare in Italy: your main door to Italian education
 
 				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
@@ -21,4 +21,60 @@ mixin sEvents()
 				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
 				+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
 
+	// end sEvents
+mixin sEvents8()
+	// start sEvents
+	+b.sEvents--page.section#sEvents&attributes(attributes)
+		.container
+				mixin content()
+					.tabs__content&attributes(attributes)
+						.tabs-inner
+							.tabs-inner__caption
+								block
+							div
+								mixin content2()
+									.tabs-inner__content&attributes(attributes)
+										mixin item(d,t, c)
+											+e.item
+												.row
+													.col.small!= d
+													.col-auto.order-sm-last 
+														+e.star(class= c)
+															+icon('star')
+													.col-sm-auto.small Раздел сессии
+												.h6.strong: a.text-body(href="#") Studiare in Italia открывает ворота Италии
+												.text-secondary Studiare in Italy: your main door to Italian education
+										+e.group
+											+e.group-time 14:00
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+										+e.group
+											+e.group-time 14:30
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`, 'active') 
+										+e.group
+											+e.group-time 15:00
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+										+e.group
+											+e.group-time 14:00
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+										+e.group
+											+e.group-time 15:30
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+										+e.group
+											+e.group-time 16:00
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+										+e.group
+											+e.group-time 16:30
+											+item(`14:00 - 14:30`, `Распределенная продажа: предпосылки и&nbsp;перспективы`) 
+								+content2()(class="active")
+								+content2()
+				+content()(class="active")
+					.tabs-inner__btn.active 16.10.2020
+					.tabs-inner__btn 17.10.2020
+				+content()
+					.tabs-inner__btn.active 20.10.2020
+					.tabs-inner__btn 21.10.2020
+
+				+content()
+					.tabs-inner__btn.active 23.10.2020
+					.tabs-inner__btn 24.10.2020
 	// end sEvents

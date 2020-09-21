@@ -1,6 +1,19 @@
 	// start .sEvents
 .sEvents {
-	
+	&--page{
+		position: relative;
+		z-index: 2;
+		&::before {
+			content: '';
+			z-index: -1;
+			width: 100%;
+			height: rem(1316);
+			background-image: url(../img/svg/reg-bg-lg.svg);
+			position: absolute;
+			left: 0;
+			top: calc(100% - 500px);
+		}
+	}
 
 	padding-top: 20px;
 	padding-bottom: 52px;
@@ -26,6 +39,7 @@
 		border: 1px solid rgba(143, 155, 179, 0.5);
 		box-sizing: border-box;
 		border-radius: 4px;
+		position: relative;
 
 		padding: rem(10) rem(12) rem(24) rem(28);
 		.row{
@@ -36,6 +50,7 @@
 	&__star{
 		color: $primary;
 		margin-bottom: rem(10);
+		cursor: pointer;
 		.icon{
 			stroke: currentColor;
 			fill:transparent;
@@ -50,6 +65,30 @@
 			}
 	}
 
+	.tabs__content{
+		padding-left: rem(50);
+	}
+	.tabs-inner{
+		&__content{
+			padding-top: rem(8);
+			padding-left: rem(10);
+			border-left: 1px solid rgba($color:#8F9BB3, $alpha: .4);
+			padding-bottom: rem(30);
+		}
+	}
+	&__group{
+		position: relative;
+	}
+	&__group-time{
+		position: absolute;
+		right: 100%;
+		font-weight: bold;
+		transform-origin: 0 0;
+		transform: rotate(90deg);
+		// bottom: rem(10);
+		top: rem(10);
+		left: rem(-20);
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

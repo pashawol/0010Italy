@@ -2230,3 +2230,60 @@ mixin sStream()
 			+e.text.text-dark Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
 
 	// end sStream
+mixin sStream9()
+	// start sStream
+	+b.sStream.section.pt-0#sStream&attributes(attributes)
+		.container 
+			+e.wrap-page
+				.row
+					.col-lg
+						+e.video-wrap--page
+								script(src='https://broadcast.comdi.com/player/js/embed.min.js', data-comdi-event='r5ftb9xd', data-login='anonymous', data-registration='{"email":"anonymous@startupvillage.ru"}', lang='ru', async='')
+						p: strong Основанный в&nbsp;1863&nbsp;году, Politecnico di&nbsp;Milano предлагает программы образования в&nbsp;области инженерии, архитектуры и&nbsp;дизайна. В&nbsp;университете работают более 1200&nbsp;преподавателей, учится 40000&nbsp;студентов, распределённых по&nbsp;7&nbsp;кампусам: Милан (Леонардо и&nbsp;Бовиза), Комо, Лекко, Кремона, Мантова и&nbsp;Пьяченца.
+						p Университет сосредоточен на&nbsp;качестве преподавания, инновационных подходах в&nbsp;исследованиях, разработке технологических прогрессов. Исследования всегда связаны с&nbsp;обучением и&nbsp;представляют собой приоритет, который позволяет университету достигать высоких результатов на&nbsp;международном уровне и&nbsp;реализовывать их&nbsp;в&nbsp;деловом мире. Это обязательство развивается в&nbsp;трех основных направлениях:
+						ul
+							li: strong повышение значения исследований в&nbsp;целях обеспечения прочного международного взаимодействия;
+							li: strong развитие партнерства с&nbsp;бизнесом для того, чтобы реализовывать научные исследования;
+							li: strong изменение условий развития науки и&nbsp;технологий для молодых специалистов с&nbsp;целью их&nbsp;профессионального роста.
+						p Миланский политехнический университет признается первым итальянским университетом среди топ-десяти европейских технических университетов и&nbsp;среди топ-20&nbsp;в мире. Университет предлагает программы двойного диплома, программы обмена, 40&nbsp;программ магистратуры и&nbsp;19&nbsp;программ учёной степени полностью на&nbsp;английском языке. Студентам открыт доступ к&nbsp;200 современным и&nbsp;оборудованным лабораториям для научных исследований в&nbsp;области механики, информатики, инженерии, строительства, архитектуры, дизайна.
+					+e.col--page.col-lg-auto
+						+e.block--logo-wrap
+							
+							img(src="img/@2x/Exhibition-1.png" loading="lazy", alt="")
+						+e.block--group
+							+e.group-btn.btn-primary-light(href="#") 
+								+e.DIV.icon-wrap
+									img(src="img/svg/btn-i-1.svg" loading="lazy", alt="")
+								| Начать чат с университетом
+							+e.group-btn.btn-primary(href="#") 
+								+e.DIV.icon-wrap
+									img(src="img/svg/btn-i-2.svg" loading="lazy", alt="")
+								| Посетить вебинар
+							+e.group-btn.btn-primary-light(href="#") 
+								+e.DIV.icon-wrap
+									img(src="img/svg/btn-i-3.svg" loading="lazy", alt="")
+								| Записаться на консультацию
+						+e.block--contact
+							+e.block-head
+								+icon("bx_bxs-phone")
+								| Контакты
+							+e.block-body
+								p Италия, Эмилия-Романья, Болонья, Сан-Джорджо-ди-Пиано, Кастель-Маджоре
+								p.strong: a.text-body(href="tel:+49856689988") +4 985 668 99 88
+								p: a(href="mailto:info@infosobaka.com") info@infosobaka.com
+								p: a(href="mailto:boloncainstitute.com") boloncainstitute.com
+						+e.block--contact
+							+e.block-head
+								+icon("ant-design_file-filled")
+								| Файлы
+							+e.block-body
+								- for (var x = 0; x < 3; x++)
+									+e.file(href="#")
+										.row
+											.col
+												| Buklet 2020 Eng
+												.small.text-secondary pdf 2.3 mb
+											.col-auto
+												+icon("eva_download-outline")
+
+	// end sStream

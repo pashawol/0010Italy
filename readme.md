@@ -10,3 +10,5 @@
 9. <https://pashawol.github.io/0010Italy/public/05-areas.html>
 10. <https://pashawol.github.io/0010Italy/public/06-show.html>
 10. <https://pashawol.github.io/0010Italy/public/07-live.html>
+10. <https://pashawol.github.io/0010Italy/public/08-programm.html>
+10. <https://pashawol.github.io/0010Italy/public/09-page.html>

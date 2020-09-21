@@ -1,0 +1,26 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug  
+include ../blocks/sSpeakers/_sSpeakers.pug
+include ../blocks/sQuestions/_sQuestions.pug
+include ../blocks/sTrackPlan/_sTrackPlan.pug
+include ../blocks/sStream/_sStream.pug
+include ../blocks/sLogos/_sLogos.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'UNIVERSITÀ DEGLI STUDI DI MILANO'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+top-nav()
+	+page-title(title)
+	+sStream9 
+	+sLogos
+	//- +sContact()
+	+footer()
+
+
+	
