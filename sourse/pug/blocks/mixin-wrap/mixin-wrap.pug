@@ -45,32 +45,35 @@ mixin reg(b="Зарегистрироваться")
 							.col-lg-6
 								+input("",'text','Имя / Name')
 							.col-lg-6
-								+input("",'tel','Телефон / Telephone')
+								+input("",'tel','Телефон / Phone Number')
 							.col-lg-6
 								+input("",'email','Почта/E-mail')
 							.col-lg-6
 								+e.input-wrap.form-group
 									label
-										+b.SPAN.input-title Какое у Вас образование?/ What education do you have?
+										+b.SPAN.input-title Какое у Вас образование?/ What is your Education Level?
 										+e.SELECT.input.form-control
 											option аттестат 11 классов
 											option средне-специальное образование
-											option один курс вуза 
+											option аттестат 11 классов+один курс вуза 
 											option бакалавриат
 											option магистратура
 						 
 							.col-lg-6
 								+e.input-wrap.form-group
-									label
-										+b.SPAN.input-title Каким языком вы владеете? / What language do you speak?
-										+e.SELECT.input.form-control
-											option английский
-											option итальянский
+									+b.SPAN.input-title Каким языком вы владеете? / What language are you proficient in?
+									.row
+										.col-auto
+											+in-c()
+												+e.SPAN.text английский
+										.col-auto
+											+in-c()
+												+e.SPAN.text итальянский
 						 
 							.col-lg-6
 								+e.input-wrap.form-group
 									label
-										+b.SPAN.input-title Какое направление вас интересует?” / Which direction are you interested in?
+										+b.SPAN.input-title Какое направление вас интересует? / What field of studies are you interested in?
 										+e.SELECT.input.form-control
 											option ЭКОНОМИКА, ФИНАНСЫ, УПРАВЛЕНИЕ БИЗНЕСОМ/ ECONOMICS, FINANCE, BUSINESS MANAGEMENT
 											option ПОЛИТОЛОГИЯ, МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ/ POLITICAL SCIENCE, INTERNATIONAL RELATIONS
@@ -96,7 +99,7 @@ mixin reg(b="Зарегистрироваться")
 							.col-lg-6
 								+e.input-wrap.form-group
 									label
-										+b.SPAN.input-title В каком году планируете поступать? / What year are you planning to enroll in?
+										+b.SPAN.input-title В каком году планируете поступать? / When do you plan to commence your studies?
 
 										+e.SELECT.input.form-control
 											option  2021

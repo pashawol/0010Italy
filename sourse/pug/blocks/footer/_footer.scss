@@ -2,9 +2,13 @@
 	background: url(../img/svg/footer-bg.svg);
 	background-position: top center;
 	padding-top: rem(100);
+	background: linear-gradient(180deg, rgba(245, 222, 210, 0) 0%, #F5DED2 75.52%);
+	&::before{
+		display: none;
+	}
 }
 .footer {
-		background: linear-gradient(180deg, rgba(245, 222, 210, 0) 0%, #F5DED2 75.52%);
+		background: linear-gradient(180deg, rgba(228, 238, 232, 0) 0%, #E2ECE6 75.52%);
 		&__block{
 			max-width: rem(360);
 			margin-left: auto;
