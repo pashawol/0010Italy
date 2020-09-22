@@ -2255,11 +2255,11 @@ mixin sStream9()
 								+e.DIV.icon-wrap
 									img(src="img/svg/btn-i-1.svg" loading="lazy", alt="")
 								| Начать чат с университетом
-							+e.group-btn.btn-primary(href="#") 
+							+e.group-btn.btn-primary-light(href="#") 
 								+e.DIV.icon-wrap
 									img(src="img/svg/btn-i-2.svg" loading="lazy", alt="")
 								| Посетить вебинар
-							+e.group-btn.btn-primary-light(href="#") 
+							+e.group-btn.btn-primary-light.link-modal(href="#modal-signup") 
 								+e.DIV.icon-wrap
 									img(src="img/svg/btn-i-3.svg" loading="lazy", alt="")
 								| Записаться на консультацию
@@ -2285,5 +2285,11 @@ mixin sStream9()
 												.small.text-secondary pdf 2.3 mb
 											.col-auto
 												+icon("eva_download-outline")
-
+		.section
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					- for (var x = 1; x < 8; x++)
+						+e.slide.swiper-slide
+							+e.img-wrap.bg-wrap(href=`img/@2x/slide-${x}.png` data-fancybox="gal")
+								img.img-bg(src=`img/@2x/slide-${x}.png`, alt="")
 	// end sStream

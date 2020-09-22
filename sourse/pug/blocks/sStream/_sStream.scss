@@ -189,6 +189,7 @@
 		}
 		&__file{
 			// @extend .text-body;
+			display: block;
 			color: $body-color;
 			&:hover{
 				color: $primary;
@@ -199,6 +200,42 @@
 			}
 			.icon{
 				font-size: rem(24);
+			}
+		}
+
+		&__slider {
+			overflow: inherit;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(526);
+		}
+
+		&__slide {
+			border-radius: 4px;
+			position: relative;
+			overflow: hidden;
+			@include mt;
+			max-width: 100%;
+			// box-shadow: 0px 4px 100px rgba(0, 0, 0, 0);
+
+			&.swiper-slide-active {
+
+				// box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+			}
+		}
+
+		&__img-wrap {
+			@include block(660, 448);
+			// width: rem(660);
+			// height: rem(448);
+			// width: 100%;
+			img {
+				object-fit: cover;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
 			}
 		}
 	@include media-breakpoint-up(xl) {}

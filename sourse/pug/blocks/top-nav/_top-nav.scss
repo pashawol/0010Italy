@@ -170,7 +170,7 @@
 		}
 		text-align: center;
 		@include media-breakpoint-up(xl) {
-			@include roww(rem(44));
+			@include roww(rem(30));
 		}
 		@include media-breakpoint-up(lg) {
 			justify-content: start;
@@ -178,7 +178,7 @@
 		}
 		padding-right: 20px;
 		justify-content: flex-end;
-		@include roww(rem(20));
+		@include roww(rem(15));
 	align-items: center;
 	font-weight: 700;
 	// text-transform: uppercase;

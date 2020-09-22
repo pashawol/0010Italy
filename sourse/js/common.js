@@ -223,6 +223,27 @@ function eventHandler() {
 		freeModeMomentum: true,
 
 	});
+
+	const swiper5 = new Swiper('.sStream__slider--js', {
+		// slidesPerView: 5,
+		...defaultSl,
+		lazy: {
+			loadPrevNext: true,
+		},
+		effect: 'coverflow',
+		spaceBetween: 0,
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		coverflowEffect: {
+			rotate: 0,
+			// stretch: -60,
+			depth: 450,
+			modifier: 1,
+			slideShadows: false,
+		},
+
+	});
 	// modal window
 
 	

@@ -80,6 +80,11 @@
 			color: $danger;
 			@include rfs(44px);
 			font-weight: bold;
+			margin-bottom: rem(10);
+			line-height: 1;
+		}
+		&__time{
+
 			margin-bottom: rem(20);
 		}
 		&__group{

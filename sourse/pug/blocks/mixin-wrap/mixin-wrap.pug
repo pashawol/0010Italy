@@ -139,10 +139,10 @@ mixin login(b="Зарегистрироваться")
 						//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
 						.row
 							.col-lg-6
-								+input("",'email','Электронный адрес')
+								+input("",'email','Электронный адрес / E-mail')
 							 
 							.col-lg-6
-								+input("",'password','Пароль') 
+								+input("",'password','Пароль / Password') 
 							.col-lg-6.mb-4
 								+e.btn.w-100.ttu(type="submit") Войти
 							.col-lg-6.mb-4.align-self-center
@@ -151,5 +151,24 @@ mixin login(b="Зарегистрироваться")
 						 
 				.col-lg-auto
 					+e.aside 
-						.h6.strong.mb-4 Пояснение к регистрации
-						+e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+						//- .h6.strong.mb-4 Пояснение к регистрации
+						//- +e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+mixin password(b="Зарегистрироваться")
+	+b.form-wrap(class="form-wrap--border")
+		.container
+			.row
+				.col
+					form(action='/file-upload'  enctype="multipart/form-data")
+						//- .dropzone(action='/file-upload'  enctype="multipart/form-data")
+						.row
+							.col-lg-6
+								+input("",'email','Электронный адрес / E-mail')
+							.w-100
+							.col-lg-6.mb-4
+								+e.btn.w-100.ttu(type="submit") Восстановить
+
+						 
+				.col-lg-auto
+					+e.aside 
+						//- .h6.strong.mb-4 Пояснение к регистрации
+						//- +e.aside-text.text-secondary Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации

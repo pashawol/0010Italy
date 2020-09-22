@@ -15,6 +15,7 @@
 			top: calc(100% - 200pxs);
 		}
 		.row{ 
+			justify-content: center;
 			@include media-breakpoint-up(xl) { 
 				--bs-gutter-x: 40px;
 				--bottom: 53px;

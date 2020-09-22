@@ -652,3 +652,10 @@ iframe {
 		} 
 	}
 }
+
+.btn-primary-light{
+	&:hover{
+		background-color: $primary;
+		border-color: $primary;
+	}
+}
