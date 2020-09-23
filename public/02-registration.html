@@ -24,242 +24,244 @@
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body>
-		<!-- start top-nav-->
-		<div class="top-nav block-with-lazy">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-auto col"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
-					</div>
-					<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">Ru</a>
-					</div>
-					<div class="col-auto order-lg-last d-none d-md-block"><a class="top-nav__btn" href="#"><span>Регистрация</span></a>
-					</div>
-					<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">
-						<svg class="icon icon-user ">
-							<use xlink:href="img/svg/sprite.svg#user"></use>
-						</svg></a>
-					</div>
-					<div class="col-auto d-lg-none">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+		<div class="main-wrapper">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-auto col"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
 						</div>
-					</div>
-					<div class="top-nav__col col-lg">
-						<div class="nav-wrap">
-							<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Live</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Направления</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Studiare in Italia</a>
-								</li>
-							</ul><a class="top-nav__btn d-sm-none" href="#"><span>Регистрация</span></a>
+						<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">Ru</a>
+						</div>
+						<div class="col-auto order-lg-last d-none d-md-block"><a class="top-nav__btn" href="#"><span>Регистрация</span></a>
+						</div>
+						<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">
+							<svg class="icon icon-user ">
+								<use xlink:href="img/svg/sprite.svg#user"></use>
+							</svg></a>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
+						<div class="top-nav__col col-lg">
+							<div class="nav-wrap">
+								<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Live</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Направления</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Studiare in Italia</a>
+									</li>
+								</ul><a class="top-nav__btn d-sm-none" href="#"><span>Регистрация</span></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- end top-nav-->
-		<div class="container">
-			<div class="page-title">
-				<div class="row">
-					<div class="col-auto"><a class="page-title__link" href="#">
-						<svg class="icon icon-arrow-back ">
-							<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
-						</svg></a>
-					</div>
-					<div class="col">
-						<h1>Бесплатная регистрация</h1>
+			<!-- end top-nav-->
+			<div class="container">
+				<div class="page-title">
+					<div class="row">
+						<div class="col-auto"><a class="page-title__link" href="#">
+							<svg class="icon icon-arrow-back ">
+								<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
+							</svg></a>
+						</div>
+						<div class="col">
+							<h1>Бесплатная регистрация</h1>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="form-wrap form-wrap form-wrap--border">
-			<div class="container">
-				<div class="h6 mb-4">Пожалуйста, заполните анкету латинскими буквами<br/>Please fill in the application form with Latin letters</div>
-				<div class="row">
-					<div class="col">
-						<form action="/file-upload" enctype="multipart/form-data">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Фамилия / Surname</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
-										</label>
+			<div class="form-wrap form-wrap form-wrap--border">
+				<div class="container">
+					<div class="h6 mb-4">Пожалуйста, заполните анкету латинскими буквами<br/>Please fill in the application form with Latin letters</div>
+					<div class="row">
+						<div class="col">
+							<form action="/file-upload" enctype="multipart/form-data">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Фамилия / Surname</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
 									</div>
-									<!-- +e.input-wrap-->
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Имя / Name</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
-										</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Имя / Name</span><input class="form-wrap__input form-control" type="text" placeholder="" name="text"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
 									</div>
-									<!-- +e.input-wrap-->
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Телефон / Phone Number</span><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
-										</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Телефон / Phone Number</span><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
 									</div>
-									<!-- +e.input-wrap-->
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Почта/E-mail</span><input class="form-wrap__input form-control" type="email" placeholder="" name="email"/>
-										</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Почта/E-mail</span><input class="form-wrap__input form-control" type="email" placeholder="" name="email"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
 									</div>
-									<!-- +e.input-wrap-->
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">В каком году планируете поступать? / When do you plan to commence your studies?</span>
-											<select class="form-wrap__input form-control">
-												<option> 2021</option>
-												<option>2022</option>
-												<option>2023 и позднее</option>
-											</select>
-										</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">В каком году планируете поступать? / When do you plan to commence your studies?</span>
+												<select class="form-wrap__input form-control">
+													<option> 2021</option>
+													<option>2022</option>
+													<option>2023 и позднее</option>
+												</select>
+											</label>
+										</div>
 									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Какое у Вас образование?/ What is your Education Level?</span>
-											<select class="form-wrap__input form-control">
-												<option>аттестат 11 классов</option>
-												<option>средне-специальное образование</option>
-												<option>аттестат 11 классов+один курс вуза </option>
-												<option>бакалавриат</option>
-												<option>магистратура</option>
-											</select>
-										</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Какое у Вас образование?/ What is your Education Level?</span>
+												<select class="form-wrap__input form-control">
+													<option>аттестат 11 классов</option>
+													<option>средне-специальное образование</option>
+													<option>аттестат 11 классов+один курс вуза </option>
+													<option>бакалавриат</option>
+													<option>магистратура</option>
+												</select>
+											</label>
+										</div>
 									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group"><span class="input-title">Каким языком вы владеете? / What language are you proficient in?</span>
-										<div class="row">
-											<div class="col-auto">
-												<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">английский</span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">итальянский</span>
-												</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group"><span class="input-title">Каким языком вы владеете? / What language are you proficient in?</span>
+											<div class="row">
+												<div class="col-auto">
+													<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">английский</span>
+													</label>
+												</div>
+												<div class="col-auto">
+													<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">итальянский</span>
+													</label>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Какое направление вас интересует? / What field of studies are you interested in?</span>
-											<select class="form-wrap__input form-control">
-												<option>ЭКОНОМИКА, ФИНАНСЫ, УПРАВЛЕНИЕ БИЗНЕСОМ/ ECONOMICS, FINANCE, BUSINESS MANAGEMENT</option>
-												<option>ПОЛИТОЛОГИЯ, МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ/ POLITICAL SCIENCE, INTERNATIONAL RELATIONS</option>
-												<option>ЮРИСПРУДЕНЦИЯ/ LAW AND LEGAL STUDIES</option>
-												<option>ИНФОРМАТИКА И КИБЕРБЕЗОПАСНОСТЬ/ COMPUTER SCIENCES AND CYBERSECURITY</option>
-												<option>АРХИТЕКТУРА И СТРОИТЕЛЬСТВО/ ARCHITECTUR</option>
-												<option>ИНЖЕНЕРНОЕ ДЕЛО/ ENGINEERING</option>
-												<option>ЕСТЕСТВЕННЫЕ НАУКИ/NATURAL SCIENCES</option>
-												<option>STATISTICA/ STATISTICS</option>
-												<option>МЕДИЦИНА И ХИРУРГИЯ/ MEDICINE AND SURGERY</option>
-												<option>ФАРМАЦЕВТИКА/ PHARMACY</option>
-												<option>ВЕТЕРИНАРИЯ/ VETERINARY MEDICINE</option>
-												<option>ПСИХОЛОГИЯ/ PSYCHOLOGY</option>
-												<option>КОММУНИКАЦИИ, PR, РЕКЛАМА/ COMMUNICATION, PUBLIC RELATION AND ADVERTISING</option>
-												<option>ТУРИЗМ/ TOURISM</option>
-												<option>ГУМАНИТАРНЫЕ НАУКИ/ HUMANITIES</option>
-												<option>ПЕДАГОГИКА И ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА/ EDUCATION AND TRAINING SCIENCES</option>
-												<option>ЛИНГВИСТИКА/ LANGUAGE STUDIES</option>
-												<option>ДИЗАЙН/МОДА/ DESIGN & FASHION</option>
-												<option>КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY</option>
-												<option>СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES</option>
-												<option>МУЗЫКА/ MUSIC</option>
-											</select>
+									<div class="col-lg-6"> 
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Страна проживания / Country of residence</span>
+												<select class="form-wrap__input form-control">
+													<option>Россия</option>
+													<option>Казахстан</option>
+													<option>Азербайджан</option>
+												</select>
+											</label>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Какое направление вас интересует? / What field of studies are you interested in?</span>
+												<select class="form-wrap__input form-control">
+													<option>ЭКОНОМИКА, ФИНАНСЫ, УПРАВЛЕНИЕ БИЗНЕСОМ/ ECONOMICS, FINANCE, BUSINESS MANAGEMENT</option>
+													<option>ПОЛИТОЛОГИЯ, МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ/ POLITICAL SCIENCE, INTERNATIONAL RELATIONS</option>
+													<option>ЮРИСПРУДЕНЦИЯ/ LAW AND LEGAL STUDIES</option>
+													<option>ИНФОРМАТИКА И КИБЕРБЕЗОПАСНОСТЬ/ COMPUTER SCIENCES AND CYBERSECURITY</option>
+													<option>АРХИТЕКТУРА И СТРОИТЕЛЬСТВО/ ARCHITECTUR</option>
+													<option>ИНЖЕНЕРНОЕ ДЕЛО/ ENGINEERING</option>
+													<option>ЕСТЕСТВЕННЫЕ НАУКИ/NATURAL SCIENCES</option>
+													<option>STATISTICA/ STATISTICS</option>
+													<option>МЕДИЦИНА И ХИРУРГИЯ/ MEDICINE AND SURGERY</option>
+													<option>ФАРМАЦЕВТИКА/ PHARMACY</option>
+													<option>ВЕТЕРИНАРИЯ/ VETERINARY MEDICINE</option>
+													<option>ПСИХОЛОГИЯ/ PSYCHOLOGY</option>
+													<option>КОММУНИКАЦИИ, PR, РЕКЛАМА/ COMMUNICATION, PUBLIC RELATION AND ADVERTISING</option>
+													<option>ТУРИЗМ/ TOURISM</option>
+													<option>ГУМАНИТАРНЫЕ НАУКИ/ HUMANITIES</option>
+													<option>ПЕДАГОГИКА И ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА/ EDUCATION AND TRAINING SCIENCES</option>
+													<option>ЛИНГВИСТИКА/ LANGUAGE STUDIES</option>
+													<option>ДИЗАЙН/МОДА/ DESIGN & FASHION</option>
+													<option>КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY</option>
+													<option>СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES</option>
+													<option>МУЗЫКА/ MUSIC</option>
+												</select>
+											</label>
+										</div>
+									</div>
+									<div class="w-100"></div>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Повторите пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="w-100"></div>
+									<div class="col-lg-6 mb-4">
+										<button class="form-wrap__btn w-100 ttu" type="submit">Зарегистрироваться
+										</button>
+									</div>
+									<div class="col-12">
+										<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Я согласен <a href="#">на обработку моих персональных данных</a> </span>
 										</label>
 									</div>
 								</div>
-								<div class="col-lg-6"> 
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Страна проживания / Country of residence</span>
-											<select class="form-wrap__input form-control">
-												<option>Россия</option>
-												<option>Казахстан</option>
-												<option>Азербайджан</option>
-											</select>
-										</label>
-									</div>
+							</form>
+						</div>
+						<div class="col-lg-auto">
+							<div class="form-wrap__aside"> 
+								<div class="h6 strong mb-4">Пояснение к регистрации</div>
+								<div class="form-wrap__aside-text text-secondary">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
 								</div>
-								<div class="w-100"></div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
-										</label>
-									</div>
-									<!-- +e.input-wrap-->
-								</div>
-								<div class="col-lg-6">
-									<div class="form-wrap__input-wrap form-group">
-										<label><span class="input-title">Повторите пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
-										</label>
-									</div>
-									<!-- +e.input-wrap-->
-								</div>
-								<div class="w-100"></div>
-								<div class="col-lg-6 mb-4">
-									<button class="form-wrap__btn w-100 ttu" type="submit">Зарегистрироваться
-									</button>
-								</div>
-								<div class="col-12">
-									<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Я согласен <a href="#">на обработку моих персональных данных</a> </span>
-									</label>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="col-lg-auto">
-						<div class="form-wrap__aside"> 
-							<div class="h6 strong mb-4">Пояснение к регистрации</div>
-							<div class="form-wrap__aside-text text-secondary">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- start sLogos-->
-		<section class="sLogos section" id="sLogos">
-			<div class="container"> 
-				<div class="section-title text-center">
-					<h2>Организаторы и&nbsp;партнеры выставки</h2>
-				</div>
-				<div class="row">
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-1.png" loading="lazy" alt=""/></noscript>
-							</div>
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/svg/logo.svg" loading="lazy" alt=""/></noscript>
-							</div>
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-3.png" loading="lazy" alt=""/></noscript>
-							</div>
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-4.png" loading="lazy" alt=""/></noscript>
-							</div>
-				</div>
-			</div>
-		</section>
-		<!-- end sLogos-->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__block"><img src="img/svg/footer-img.svg" loading="lazy" alt=""/>
-					<div class="footer__copy">© study-italy.ru 2015 —2020
-					</div><a class="footer__mail" href="mailto:info@study-italy.ru">info@study-italy.ru</a><br/><a class="footer__tel" href="tel:+7(495)151-99-05">+7(495) 151-99-05</a>
-					<div class="footer__text">Мы&nbsp;собираем метаданные пользователей (cookie, данные об&nbsp;IP-адресе и&nbsp;меcтоположении) для функционирования сайта. Если вы&nbsp;не&nbsp;хотите, чтобы эти данные обрабатывались, то&nbsp;вам следует покинуть сайт
+			<!-- start sLogos-->
+			<section class="sLogos section" id="sLogos">
+				<div class="container"> 
+					<div class="section-title text-center">
+						<h2>Организаторы и&nbsp;партнеры выставки</h2>
+					</div>
+					<div class="row">
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-1.png" loading="lazy" alt=""/></noscript>
+								</div>
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/svg/logo.svg" loading="lazy" alt=""/></noscript>
+								</div>
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-3.png" loading="lazy" alt=""/></noscript>
+								</div>
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-4.png" loading="lazy" alt=""/></noscript>
+								</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</section>
+			<!-- end sLogos-->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__block"><img src="img/svg/footer-img.svg" loading="lazy" alt=""/>
+						<div class="footer__copy">© study-italy.ru 2015 —2020
+						</div><a class="footer__mail" href="mailto:info@study-italy.ru">info@study-italy.ru</a><br/><a class="footer__tel" href="tel:+7(495)151-99-05">+7(495) 151-99-05</a>
+						<div class="footer__text">Мы&nbsp;собираем метаданные пользователей (cookie, данные об&nbsp;IP-адресе и&nbsp;меcтоположении) для функционирования сайта. Если вы&nbsp;не&nbsp;хотите, чтобы эти данные обрабатывались, то&nbsp;вам следует покинуть сайт
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-ask-question" style="display: none">
 			<div class="form-wrap">
@@ -374,7 +376,18 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-6"> 
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Страна проживания / Country of residence</span>
+												<select class="form-wrap__input form-control">
+													<option>Россия</option>
+													<option>Казахстан</option>
+													<option>Азербайджан</option>
+												</select>
+											</label>
+										</div>
+									</div>
+									<div class="col-lg-12">
 										<div class="form-wrap__input-wrap form-group">
 											<label><span class="input-title">Какое направление вас интересует? / What field of studies are you interested in?</span>
 												<select class="form-wrap__input form-control">
@@ -399,17 +412,6 @@
 													<option>КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY</option>
 													<option>СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES</option>
 													<option>МУЗЫКА/ MUSIC</option>
-												</select>
-											</label>
-										</div>
-									</div>
-									<div class="col-lg-6"> 
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Страна проживания / Country of residence</span>
-												<select class="form-wrap__input form-control">
-													<option>Россия</option>
-													<option>Казахстан</option>
-													<option>Азербайджан</option>
 												</select>
 											</label>
 										</div>

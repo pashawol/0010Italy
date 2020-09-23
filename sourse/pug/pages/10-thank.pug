@@ -1,0 +1,27 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sLogos/_sLogos.pug 
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Бесплатная регистрация'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+top-nav()
+	//- +page-title(title)
+	.section.container.text-center
+		.h3 Благодарим Вас за регистрацию на выставку 
+		.h4 “Учись в Италии! Studiare in Italia”
+
+		.h4 Thank you for signing up to the Fair "Studiare in Italia"
+
+	+sLogos
+	+footer()
+
+
+	

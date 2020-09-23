@@ -84,8 +84,15 @@ mixin reg(b="Зарегистрироваться")
 										.col-auto
 											+in-c()
 												+e.SPAN.text итальянский
-						 
-							.col-lg-6
+							.col-lg-6 
+								+e.input-wrap.form-group
+									label
+										+b.SPAN.input-title Страна проживания / Country of residence
+										+e.SELECT.input.form-control
+											option Россия
+											option Казахстан
+											option Азербайджан
+							.col-lg-12
 								+e.input-wrap.form-group
 									label
 										+b.SPAN.input-title Какое направление вас интересует? / What field of studies are you interested in?
@@ -111,14 +118,7 @@ mixin reg(b="Зарегистрироваться")
 											option КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY
 											option СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES
 											option МУЗЫКА/ MUSIC
-							.col-lg-6 
-								+e.input-wrap.form-group
-									label
-										+b.SPAN.input-title Страна проживания / Country of residence
-										+e.SELECT.input.form-control
-											option Россия
-											option Казахстан
-											option Азербайджан
+
 							.w-100
 							.col-lg-6
 								+input("",'password','Пароль')

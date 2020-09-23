@@ -24,350 +24,352 @@
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body>
-		<!-- start top-nav-->
-		<div class="top-nav block-with-lazy">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-auto col"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
-					</div>
-					<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">Ru</a>
-					</div>
-					<div class="col-auto order-lg-last d-none d-md-block"><a class="top-nav__btn" href="#"><span>Регистрация</span></a>
-					</div>
-					<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">
-						<svg class="icon icon-user ">
-							<use xlink:href="img/svg/sprite.svg#user"></use>
-						</svg></a>
-					</div>
-					<div class="col-auto d-lg-none">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-						</div>
-					</div>
-					<div class="top-nav__col col-lg">
-						<div class="nav-wrap">
-							<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Live</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Направления</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Studiare in Italia</a>
-								</li>
-							</ul><a class="top-nav__btn d-sm-none" href="#"><span>Регистрация</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end top-nav-->
-		<div class="container">
-			<div class="page-title">
-				<div class="row">
-					<div class="col-auto"><a class="page-title__link" href="#">
-						<svg class="icon icon-arrow-back ">
-							<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
-						</svg></a>
-					</div>
-					<div class="col">
-						<h1>Выставка</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- start sExhibition-->
-		<div class="sExhibition" id="sExhibition">
-			<div class="container">
-				<div class="sExhibition__filter">
+		<div class="main-wrapper">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
 					<div class="row">
-						<div class="sExhibition__col col-xl-auto mb-0">
-							<div class="search-block">
-								<div class="search-block__input-wrap form-group"><input class="search-block__input form-control" type="text" placeholder="Поиск по учебным заведениям" name="text"/>
+						<div class="col-lg-auto col"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
+						</div>
+						<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">Ru</a>
+						</div>
+						<div class="col-auto order-lg-last d-none d-md-block"><a class="top-nav__btn" href="#"><span>Регистрация</span></a>
+						</div>
+						<div class="col-auto order-lg-last"><a class="top-nav__btn-user" href="#">
+							<svg class="icon icon-user ">
+								<use xlink:href="img/svg/sprite.svg#user"></use>
+							</svg></a>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
+						<div class="top-nav__col col-lg">
+							<div class="nav-wrap">
+								<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Программа</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Участники</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Live</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Направления</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Studiare in Italia</a>
+									</li>
+								</ul><a class="top-nav__btn d-sm-none" href="#"><span>Регистрация</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end top-nav-->
+			<div class="container">
+				<div class="page-title">
+					<div class="row">
+						<div class="col-auto"><a class="page-title__link" href="#">
+							<svg class="icon icon-arrow-back ">
+								<use xlink:href="img/svg/sprite.svg#arrow-back"></use>
+							</svg></a>
+						</div>
+						<div class="col">
+							<h1>Выставка</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- start sExhibition-->
+			<div class="sExhibition" id="sExhibition">
+				<div class="container">
+					<div class="sExhibition__filter">
+						<div class="row">
+							<div class="sExhibition__col col-xl-auto mb-0">
+								<div class="search-block">
+									<div class="search-block__input-wrap form-group"><input class="search-block__input form-control" type="text" placeholder="Поиск по учебным заведениям" name="text"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<button class="search-block__btn" type="submit">
+										<svg class="icon icon-search ">
+											<use xlink:href="img/svg/sprite.svg#search"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="sExhibition__col-toggle col-md d-lg-block">
+								<div class="sExhibition__input-wrap form-group">
+									<label><span class="input-title">Город</span>
+										<select class="sExhibition__input form-control" name="select">
+											<option value="Не выбрано">Не выбрано</option>
+											<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
+											<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
+											<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
+											<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
+										</select>
+									</label>
 								</div>
 								<!-- +e.input-wrap-->
-								<button class="search-block__btn" type="submit">
-									<svg class="icon icon-search ">
-										<use xlink:href="img/svg/sprite.svg#search"></use>
-									</svg>
-								</button>
+							</div>
+							<div class="sExhibition__col-toggle col-md d-lg-block">
+								<div class="sExhibition__input-wrap form-group">
+									<label><span class="input-title">Направление образования</span>
+										<select class="sExhibition__input form-control" name="select">
+											<option value="Не выбрано">Не выбрано</option>
+											<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
+											<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
+											<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
+											<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
+										</select> 
+									</label> 
+								</div>
+								<!-- +e.input-wrap-->
 							</div>
 						</div>
-						<div class="sExhibition__col-toggle col-md d-lg-block">
-							<div class="sExhibition__input-wrap form-group">
-								<label><span class="input-title">Город</span>
-									<select class="sExhibition__input form-control" name="select">
-										<option value="Не выбрано">Не выбрано</option>
-										<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
-										<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
-										<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
-										<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
-									</select>
-								</label>
-							</div>
-							<!-- +e.input-wrap-->
-						</div>
-						<div class="sExhibition__col-toggle col-md d-lg-block">
-							<div class="sExhibition__input-wrap form-group">
-								<label><span class="input-title">Направление образования</span>
-									<select class="sExhibition__input form-control" name="select">
-										<option value="Не выбрано">Не выбрано</option>
-										<option value=" placeholder 1">placeholder dfssfsd dfsdfd sads 1</option>
-										<option value=" placeholder 2">placeholder dfssfsd dfsdfd sads 2</option>
-										<option value=" placeholder 3">placeholder dfssfsd dfsdfd sads 3</option>
-										<option value=" placeholder 4">placeholder dfssfsd dfsdfd sads 4</option>
-									</select> 
-								</label> 
-							</div>
-							<!-- +e.input-wrap-->
+						<div class="sExhibition__toggle d-lg-none"><span class="show">Больше фильтров</span><span class="hide">Скрыть</span>
 						</div>
 					</div>
-					<div class="sExhibition__toggle d-lg-none"><span class="show">Больше фильтров</span><span class="hide">Скрыть</span>
+					<div class="row">
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-1.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-1.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI MILANO
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-2.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-2.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ CATTOLICA DEL SACRO CUORE (UCSC)
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-3.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-3.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">POLITECNICO DI MILANO
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-4.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-4.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI PISA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-5.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-5.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ IUAV DI VENEZIA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-6.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-6.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">LUISS GUIDO CARLI (LUISS UNIVERSITY)
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-7.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-7.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ PER STRANIERI DI SIENA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-8.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-8.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ COMMERCIALE LUIGI BOCCONI (UNIVERSITÀ BOCCONI)
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-9.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-9.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ CA’ FOSCARI VENEZIA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-10.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-10.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ IULM – MILANO
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-11.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-11.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI MACERATA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-12.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-12.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ <br> DI SIENA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-13.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-13.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI PADOVA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-14.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-14.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">UNIVERSITÀ <br> LUMSA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
+								<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source srcset="img/@2x/webp/Exhibition-15.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-15.png" loading="lazy" alt=""/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+									<div class="sExhibition__text">ALMA LA SCUOLA INTERNAZIONALE DI CUCINA ITALIANA
+									</div></a>
+								</div>
+								<!-- /+e.col.col-md-4.col-6-->
 					</div>
 				</div>
-				<div class="row">
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-1.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-1.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI MILANO
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-2.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-2.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ CATTOLICA DEL SACRO CUORE (UCSC)
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-3.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-3.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">POLITECNICO DI MILANO
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-4.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-4.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI PISA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-5.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-5.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ IUAV DI VENEZIA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-6.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-6.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">LUISS GUIDO CARLI (LUISS UNIVERSITY)
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-7.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-7.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ PER STRANIERI DI SIENA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-8.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-8.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ COMMERCIALE LUIGI BOCCONI (UNIVERSITÀ BOCCONI)
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-9.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-9.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ CA’ FOSCARI VENEZIA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-10.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-10.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ IULM – MILANO
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-11.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-11.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI MACERATA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-12.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-12.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ <br> DI SIENA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-13.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-13.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ DEGLI STUDI DI PADOVA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-14.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-14.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">UNIVERSITÀ <br> LUMSA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
-							<div class="sExhibition__col col-md-4 col-6"><a class="sExhibition__item" href="#">
-								<!-- picture-->
-								<picture> 
-									<noscript class="loading-lazy">
-										<source srcset="img/@2x/webp/Exhibition-15.webp" loading="lazy" type="image/webp"/><img src="img/@2x/Exhibition-15.png" loading="lazy" alt=""/>
-									</noscript>
-								</picture>
-								<!-- /picture-->
-								<div class="sExhibition__text">ALMA LA SCUOLA INTERNAZIONALE DI CUCINA ITALIANA
-								</div></a>
-							</div>
-							<!-- /+e.col.col-md-4.col-6-->
+				<div class="pagination-wrapper">
+					<ul class="page-numbers">
+								<li><span class="prev page-numbers">
+										<svg class="icon icon-arrow-left ">
+											<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+										</svg></span>
+								</li>
+								<li><span class="page-numbers current"> 1</span>
+								</li>
+								<li><a class="page-numbers" href="#">1</a>
+								</li>
+								<li><a class="page-numbers" href="#">2</a>
+								</li>
+								<li><a class="page-numbers" href="#">...</a>
+								</li>
+								<li><a class="page-numbers" href="#">23</a>
+								</li>
+								<li><a class="next page-numbers" href="#">
+										<svg class="icon icon-arrow-right ">
+											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+										</svg></a>
+								</li>
+					</ul>
 				</div>
 			</div>
-			<div class="pagination-wrapper">
-				<ul class="page-numbers">
-							<li><span class="prev page-numbers">
-									<svg class="icon icon-arrow-left ">
-										<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
-									</svg></span>
-							</li>
-							<li><span class="page-numbers current"> 1</span>
-							</li>
-							<li><a class="page-numbers" href="#">1</a>
-							</li>
-							<li><a class="page-numbers" href="#">2</a>
-							</li>
-							<li><a class="page-numbers" href="#">...</a>
-							</li>
-							<li><a class="page-numbers" href="#">23</a>
-							</li>
-							<li><a class="next page-numbers" href="#">
-									<svg class="icon icon-arrow-right ">
-										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
-									</svg></a>
-							</li>
-				</ul>
-			</div>
+			<!-- end sExhibition-->
+			<!-- start sLogos-->
+			<section class="sLogos section" id="sLogos">
+				<div class="container"> 
+					<div class="section-title text-center">
+						<h2>Организаторы и&nbsp;партнеры выставки</h2>
+					</div>
+					<div class="row">
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-1.png" loading="lazy" alt=""/></noscript>
+								</div>
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/svg/logo.svg" loading="lazy" alt=""/></noscript>
+								</div>
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-3.png" loading="lazy" alt=""/></noscript>
+								</div>
+								<div class="sLogos__col col-lg-auto col-6">
+									<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-4.png" loading="lazy" alt=""/></noscript>
+								</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sLogos-->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__block"><img src="img/svg/footer-img.svg" loading="lazy" alt=""/>
+						<div class="footer__copy">© study-italy.ru 2015 —2020
+						</div><a class="footer__mail" href="mailto:info@study-italy.ru">info@study-italy.ru</a><br/><a class="footer__tel" href="tel:+7(495)151-99-05">+7(495) 151-99-05</a>
+						<div class="footer__text">Мы&nbsp;собираем метаданные пользователей (cookie, данные об&nbsp;IP-адресе и&nbsp;меcтоположении) для функционирования сайта. Если вы&nbsp;не&nbsp;хотите, чтобы эти данные обрабатывались, то&nbsp;вам следует покинуть сайт
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
-		<!-- end sExhibition-->
-		<!-- start sLogos-->
-		<section class="sLogos section" id="sLogos">
-			<div class="container"> 
-				<div class="section-title text-center">
-					<h2>Организаторы и&nbsp;партнеры выставки</h2>
-				</div>
-				<div class="row">
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-1.png" loading="lazy" alt=""/></noscript>
-							</div>
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/svg/logo.svg" loading="lazy" alt=""/></noscript>
-							</div>
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-3.png" loading="lazy" alt=""/></noscript>
-							</div>
-							<div class="sLogos__col col-lg-auto col-6">
-								<noscript class="loading-lazy"><img class="lazy res-i" src="img/@2x/logo-4.png" loading="lazy" alt=""/></noscript>
-							</div>
-				</div>
-			</div>
-		</section>
-		<!-- end sLogos-->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__block"><img src="img/svg/footer-img.svg" loading="lazy" alt=""/>
-					<div class="footer__copy">© study-italy.ru 2015 —2020
-					</div><a class="footer__mail" href="mailto:info@study-italy.ru">info@study-italy.ru</a><br/><a class="footer__tel" href="tel:+7(495)151-99-05">+7(495) 151-99-05</a>
-					<div class="footer__text">Мы&nbsp;собираем метаданные пользователей (cookie, данные об&nbsp;IP-адресе и&nbsp;меcтоположении) для функционирования сайта. Если вы&nbsp;не&nbsp;хотите, чтобы эти данные обрабатывались, то&nbsp;вам следует покинуть сайт
-					</div>
-				</div>
-			</div>
-		</footer>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-ask-question" style="display: none">
 			<div class="form-wrap">
@@ -482,7 +484,18 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-6"> 
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">Страна проживания / Country of residence</span>
+												<select class="form-wrap__input form-control">
+													<option>Россия</option>
+													<option>Казахстан</option>
+													<option>Азербайджан</option>
+												</select>
+											</label>
+										</div>
+									</div>
+									<div class="col-lg-12">
 										<div class="form-wrap__input-wrap form-group">
 											<label><span class="input-title">Какое направление вас интересует? / What field of studies are you interested in?</span>
 												<select class="form-wrap__input form-control">
@@ -507,17 +520,6 @@
 													<option>КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY</option>
 													<option>СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES</option>
 													<option>МУЗЫКА/ MUSIC</option>
-												</select>
-											</label>
-										</div>
-									</div>
-									<div class="col-lg-6"> 
-										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">Страна проживания / Country of residence</span>
-												<select class="form-wrap__input form-control">
-													<option>Россия</option>
-													<option>Казахстан</option>
-													<option>Азербайджан</option>
 												</select>
 											</label>
 										</div>
