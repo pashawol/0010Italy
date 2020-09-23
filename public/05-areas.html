@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
-	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+	<body>
 		<!-- start top-nav-->
 		<div class="top-nav block-with-lazy">
 			<div class="container">
@@ -348,14 +348,16 @@
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
-									<div class="col-lg-6"> 
-										<label><span class="input-title">Страна проживания / Country of residence</span>
-											<select class="form-wrap__input form-control">
-												<option>Россия</option>
-												<option>Казахстан</option>
-												<option>Азербайджан</option>
-											</select>
-										</label>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="input-title">В каком году планируете поступать? / When do you plan to commence your studies?</span>
+												<select class="form-wrap__input form-control">
+													<option> 2021</option>
+													<option>2022</option>
+													<option>2023 и позднее</option>
+												</select>
+											</label>
+										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-wrap__input-wrap form-group">
@@ -413,17 +415,18 @@
 											</label>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-6"> 
 										<div class="form-wrap__input-wrap form-group">
-											<label><span class="input-title">В каком году планируете поступать? / When do you plan to commence your studies?</span>
+											<label><span class="input-title">Страна проживания / Country of residence</span>
 												<select class="form-wrap__input form-control">
-													<option> 2021</option>
-													<option>2022</option>
-													<option>2023 и позднее</option>
+													<option>Россия</option>
+													<option>Казахстан</option>
+													<option>Азербайджан</option>
 												</select>
 											</label>
 										</div>
 									</div>
+									<div class="w-100"></div>
 									<div class="col-lg-6">
 										<div class="form-wrap__input-wrap form-group">
 											<label><span class="input-title">Пароль</span><input class="form-wrap__input form-control" type="password" placeholder="" name="password"/>
@@ -438,6 +441,7 @@
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
+									<div class="w-100"></div>
 									<div class="col-lg-6 mb-4">
 										<button class="form-wrap__btn w-100 ttu" type="submit">Сохранить
 										</button>

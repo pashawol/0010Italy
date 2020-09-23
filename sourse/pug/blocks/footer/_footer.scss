@@ -1,9 +1,10 @@
 .cabinet-page .footer{
-	background: url(../img/svg/footer-bg.svg);
+	// background: url(../img/svg/footer-bg.svg);
 	background-position: top center;
 	padding-top: rem(100);
 	&::before{
-		display: none;
+		// display: none;
+		top: -150px;
 	}
 }
 .main-page .footer{
@@ -11,12 +12,13 @@
 	background: linear-gradient(180deg, rgba(245, 222, 210, 0) 0%, #F5DED2 75.52%);
 }
 .footer {
+	position: relative;
 	&::before {
 		content: '';
 		z-index: -1;
 		width: 100%;
 		height: rem(1316);
-		// background-image: url(../img/svg/reg-bg-lg.svg);
+		background-image: url(../img/svg/reg-bg-lg.svg);
 		position: absolute;
 		left: 0;
 		top: -400px;

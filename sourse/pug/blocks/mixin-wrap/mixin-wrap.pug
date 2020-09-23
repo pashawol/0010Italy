@@ -53,13 +53,16 @@ mixin reg(b="Зарегистрироваться")
 								+input("",'tel','Телефон / Phone Number')
 							.col-lg-6
 								+input("",'email','Почта/E-mail')
-							.col-lg-6 
+							
+							.col-lg-6
+								+e.input-wrap.form-group
 									label
-										+b.SPAN.input-title Страна проживания / Country of residence
+										+b.SPAN.input-title В каком году планируете поступать? / When do you plan to commence your studies?
+
 										+e.SELECT.input.form-control
-											option Россия
-											option Казахстан
-											option Азербайджан
+											option  2021
+											option 2022
+											option 2023 и позднее
 							.col-lg-6
 								+e.input-wrap.form-group
 									label
@@ -108,19 +111,20 @@ mixin reg(b="Зарегистрироваться")
 											option КУЛИНАРИЯ И КОНДИТЕРСКОЕ ДЕЛО/ CULINARY AND PASTRY
 											option СЕЛЬСКОЕ ХОЗЯЙСТВО, ЛЕСНОЕ ХОЗЯЙСТВО И ПИЩЕВЫЕ НАУКИ/ AGRICULTURAL, FORESTRY AND FOOD SCIENCES
 											option МУЗЫКА/ MUSIC
-							.col-lg-6
+							.col-lg-6 
 								+e.input-wrap.form-group
 									label
-										+b.SPAN.input-title В каком году планируете поступать? / When do you plan to commence your studies?
-
+										+b.SPAN.input-title Страна проживания / Country of residence
 										+e.SELECT.input.form-control
-											option  2021
-											option 2022
-											option 2023 и позднее
+											option Россия
+											option Казахстан
+											option Азербайджан
+							.w-100
 							.col-lg-6
 								+input("",'password','Пароль')
 							.col-lg-6
 								+input("",'password','Повторите пароль')
+							.w-100
 							.col-lg-6.mb-4
 								+e.btn.w-100.ttu(type="submit")= b
 							.col-12
