@@ -14,3 +14,4 @@
 1. <https://pashawol.github.io/0010Italy/public/09-page.html>
 1. <https://pashawol.github.io/0010Italy/public/03-password.html>
 1. <https://pashawol.github.io/0010Italy/public/10-thank.html>
+1. <https://pashawol.github.io/0010Italy/public/11-page-copy.html>

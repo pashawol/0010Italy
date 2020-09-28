@@ -26,6 +26,12 @@ const JSCCommon = {
 					// ZOOM: "Zoom"
 				},
 			},
+			beforeLoad: function () {
+				document.querySelector("html").classList.add("fixed")
+			},
+			afterClose: function () {
+				document.querySelector("html").classList.remove("fixed")
+			},
 		});
 		$(".modal-close-js").click(function () {
 			$.fancybox.close();

@@ -31,6 +31,12 @@ var JSCCommon = {
 					// ZOOM: "Zoom"
 
 				}
+			},
+			beforeLoad: function beforeLoad() {
+				document.querySelector("html").classList.add("fixed");
+			},
+			afterClose: function afterClose() {
+				document.querySelector("html").classList.remove("fixed");
 			}
 		});
 		$(".modal-close-js").click(function () {
