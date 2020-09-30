@@ -9,15 +9,26 @@
 		vertical-align: middle;
 		@include mt;
 		display: block;
+		// background-color: $primary;
+		color: #ffffff;
+		width: rem(40);
+		height: rem(40);
+		@extend .btn;
+		@extend .btn-primary;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+
 		&:hover{
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
-			opacity: .6 ;
+			// opacity: .6 ;
 		}
 		
 	}
 	.icon{
 	font-size: rem(28);
-	color: $dark;
+	// color: $dark;
 	}
 	 
 
