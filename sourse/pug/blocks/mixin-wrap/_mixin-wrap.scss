@@ -15,6 +15,7 @@
 		height: rem(40);
 		@extend .btn;
 		@extend .btn-primary;
+		border-radius: rem(12);
 		display: flex;
 		justify-content: center;
 		align-items: center;
